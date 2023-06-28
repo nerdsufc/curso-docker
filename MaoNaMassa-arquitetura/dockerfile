@@ -1,0 +1,9 @@
+FROM debian                     
+
+RUN apt-get update
+
+RUN apt-get install python3 -y
+
+COPY ./meuPrograma.py .
+
+CMD ["python3" , "meuPrograma.py"]
