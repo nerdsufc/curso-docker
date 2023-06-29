@@ -16,7 +16,7 @@ docker network create --subnet=192.168.101.0/24 '<NOME-DA-REDE>'    #   Assim cr
 docker run -d --name web1 --net '<REDE-CRIADA>' -v vol-web1:/usr/local/apache2/htdocs/ httpd; # Subimos o web1, na rede que criamos e com  o volume 'vol-web1'
 docker run -d --name web2 --net '<REDE-CRIADA>' -v vol-web2:/usr/local/apache2/htdocs/ httpd; # Subimos o web1, na rede que criamos e com  o volume 'vol-web2'
 
-#   Verificando ips atribuidos aos containers pois vamos precisar deles (deixe anotado em algum lugar fácil).
+#   Verificando ips atribuidos aos containers.
 
 docker network inspect lb-web;
 
