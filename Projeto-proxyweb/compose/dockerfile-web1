@@ -1,3 +1,0 @@
-FROM httpd:latest
-
-COPY FRONT_web1 /usr/local/apache2/htdocs/
