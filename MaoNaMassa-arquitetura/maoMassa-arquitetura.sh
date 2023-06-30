@@ -64,7 +64,7 @@ docker images
 
 # Agora vamos consumir(o bolo), ou seja, rodar um container usando a imagem criada.
 
-docker run --name -ti meuContainer <NOME-DA-IMAGEM>
+docker run -ti --name meuContainer <NOME-DA-IMAGEM>
 
 # -----------------------------------------
 # :D
